@@ -22,6 +22,35 @@ header.masthead {
   color: white;
 }
 
+.masthead #title {
+  text-shadow: .5px .5px 4px #696969;
+}
+
+.masthead #title-text {
+  text-shadow: .5px .5px 4px #696969;
+}
+
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+}
+
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
   max-width: 1920px;
@@ -42,7 +71,7 @@ header.masthead {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background:#D5D5D5;
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -57,4 +86,45 @@ header.masthead {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+/* Contact Page */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* margin-top: 6px;
+  margin-bottom: 16px; */
+}
+
+input[type=submit] {
+  background-color: #ddd;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1ex;
+}
+
+input[type=submit]:hover {
+  background-color: #555;
+}
+
+.container-contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#contact-page > div > h3 {
+  font-size: 2em;
+  font-family: 'baskerville';
+  font-weight: lighter;
+  letter-spacing: 4px;
+  /* margin: 2ex .1ex 2.5ex 0; */
 }
